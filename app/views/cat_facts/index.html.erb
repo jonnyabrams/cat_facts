@@ -1,2 +1,7 @@
-<h1>CatFacts#index</h1>
-<p>Find me in app/views/cat_facts/index.html.erb</p>
+<h1>Cat Facts</h1>
+<p>Add a new cat fact:</p>
+<%= form_for @cat_fact do |f| %>
+    <%= f.label :fact %><br>
+    <%= f.text_area :fact %><br>
+    <%= f.submit %>
+<% end %>
